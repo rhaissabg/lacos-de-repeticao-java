@@ -1,0 +1,38 @@
+package lacos.repeticao;
+
+import java.util.Scanner;
+
+public class Media {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		int numero, soma = 0;
+		int quantidade = 0;
+		
+		do {
+			
+			System.out.print("Digite um número: ");
+			numero = sc.nextInt();
+			
+			if (numero % 3 == 0) {
+				
+				if (numero != 0) {
+					soma += numero;
+					quantidade++;
+				}
+				
+			}
+			
+		} while (numero != 0);
+		
+		System.out.println();
+		System.out.printf("Soma: %d%n", soma);
+		System.out.printf("Quantidade: %d%n", quantidade);
+		
+		sc.close();
+
+	}
+
+}

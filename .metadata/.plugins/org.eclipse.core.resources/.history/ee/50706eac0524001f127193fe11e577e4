@@ -1,0 +1,22 @@
+package lacos.repeticao;
+
+import java.util.Scanner;
+
+public class LerIdades {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int idade, menor21 = 0, maior50 = 0; 
+		
+		while (idade => 0) {
+			System.out.print("Digite uma idade: ");
+			idade = sc.nextInt();
+		}
+		
+		sc.close();
+
+	}
+
+}

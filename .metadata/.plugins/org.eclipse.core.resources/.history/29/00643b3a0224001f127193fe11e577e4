@@ -1,0 +1,34 @@
+package lacos.repeticao;
+
+import java.util.Scanner;
+
+public class Multiplos {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int numero1, numero2;
+		
+		System.out.print("Digite o 1º número do intervalo: ");
+		numero1 = sc.nextInt();
+		
+		System.out.print("Digite o último número do intervalo: ");
+		numero2 = sc.nextInt();
+		
+		if (numero1 > numero2) {
+			System.out.println("Intervalo inválido!");
+		}
+		else {
+			for (int i = numero1; i <= numero2; i++) {
+				
+				
+				
+			}
+		}
+		
+		sc.close();
+
+	}
+
+}

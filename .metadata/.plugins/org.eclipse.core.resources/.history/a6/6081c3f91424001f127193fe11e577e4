@@ -1,0 +1,37 @@
+package lacos.repeticao;
+
+import java.util.Scanner;
+
+public class AvaliarColaborador {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int idade, idGenero, pessoaDev;
+		char resposta = 's';
+		
+		while (resposta == 's') {
+			
+			System.out.print("Idade: ");
+			idade = sc.nextInt();
+			
+			System.out.println("Identidade de gênero: ");
+			System.out.println("[1] Mulher Cis");
+			System.out.println("[2] Homem Cis");
+			System.out.println("[3] Não Binário");
+			System.out.println("[4] Mulher Trans");
+			System.out.println("[5] Homem Trans");
+			System.out.println("[6] Outros");
+			idGenero = sc.nextInt();
+			
+			System.out.print("Deseja continuar? (s/n) ");
+			resposta = sc.next().charAt(0);
+		}
+		
+		
+		sc.close();
+
+	}
+
+}
